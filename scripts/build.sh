@@ -43,16 +43,16 @@ USAGE
 }
 
 function run::build() {
-  echo "${BUILDPACKDIR}"
+  printf "${BUILDPACKDIR}"
   if [[ -f "${BUILDPACKDIR}/run/main.go" ]]; then
     pushd "${BUILDPACKDIR}/bin" > /dev/null || return
       printf "%s" "Building run... "
 
+      cd ${BUILDPACKDIR}/run
       GOOS=linux \
         go build \
           -ldflags="-s -w" \
-          -o "run" \
-            "${BUILDPACKDIR}/run"
+          -o "run"
 
       echo "Success!"
 
