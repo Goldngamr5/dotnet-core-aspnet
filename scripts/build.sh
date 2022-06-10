@@ -24,7 +24,7 @@ function main() {
         util::print::error "unknown argument \"${1}\""
     esac
   done
-
+  printf "${BUILDPACKDIR}"
   mkdir -p "${BUILDPACKDIR}/bin"
 
   run::build
@@ -43,6 +43,7 @@ USAGE
 }
 
 function run::build() {
+  echo "${BUILDPACKDIR}"
   if [[ -f "${BUILDPACKDIR}/run/main.go" ]]; then
     pushd "${BUILDPACKDIR}/bin" > /dev/null || return
       printf "%s" "Building run... "
@@ -71,6 +72,8 @@ function cmd::build() {
     local name
     for src in "${BUILDPACKDIR}"/cmd/*; do
       name="$(basename "${src}")"
+      printf name
+      printf "${BUILDPACKDIR}"
 
       printf "%s" "Building ${name}... "
 

@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Goldngamr5/dotnet-core-aspnet/issues"
   },
-  "homepage": "https://github.com/Goldngamr5/dotnet-core-aspnet#readme"
+  "homepage": "https://github.com/Goldngamr5/dotnet-core-aspnet#readme",
+  "dependencies": {
+    "gh": "^2.8.9"
+  }
 }
