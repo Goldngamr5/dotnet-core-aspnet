@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	dotnetcoreaspnet "github.com/paketo-buildpacks/dotnet-core-aspnet"
+	dotnetcoreaspnet "github.com/Goldngamr5/dotnet-core-aspnet"
 	"github.com/paketo-buildpacks/packit/v2"
 	"github.com/paketo-buildpacks/packit/v2/cargo"
 	"github.com/paketo-buildpacks/packit/v2/chronos"
