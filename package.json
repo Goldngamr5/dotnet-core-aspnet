@@ -1,0 +1,23 @@
+{
+  "name": "dotnet-core-aspnet",
+  "version": "0.6.2",
+  "description": "ASPNet buildpack",
+  "main": "/run/main.go",
+  "scripts": {
+    "test": "/scripts/package.sh -v 0.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goldngamr5/dotnet-core-aspnet.git"
+  },
+  "keywords": [
+    "dotnet",
+    "APSNet"
+  ],
+  "author": "Unifox",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Goldngamr5/dotnet-core-aspnet/issues"
+  },
+  "homepage": "https://github.com/Goldngamr5/dotnet-core-aspnet#readme"
+}
