@@ -54,7 +54,6 @@ function util::tools::jam::install () {
 
     util::print::title "Installing jam ${version}"
     curl "https://github.com/paketo-buildpacks/jam/releases/download/${version}/jam-${os}" \
-      --silent \
       --location \
       --output "${dir}/jam"
     chmod +x "${dir}/jam"
@@ -99,7 +98,6 @@ function util::tools::pack::install() {
 
     util::print::title "Installing pack ${version}"
     curl "https://github.com/buildpacks/pack/releases/download/${version}/pack-${version}-${os}.tgz" \
-      --silent \
       --location \
       --output /tmp/pack.tgz
     tar xzf /tmp/pack.tgz -C "${dir}"
